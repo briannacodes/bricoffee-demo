@@ -1,0 +1,319 @@
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", "monospace";
+    
+
+}
+
+html{
+    color: rgba(166, 194, 206, 0.9);
+    scroll-behavior: smooth;
+    background-color: #211712;
+}
+
+a{
+    text-decoration: none;
+    display: inline-flex;
+    color: rgba(166, 194, 206, 0.9);
+}
+
+a:hover{
+    opacity: 1;
+    font-weight: bold;
+}
+    
+ul{
+    list-style: none;
+}
+
+section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+
+section h4{
+    text-transform: uppercase;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+ p{ 
+    line-height: 1.5;
+    padding: 0 1.25rem;
+    text-align: center;
+}
+
+h3{
+    font-weight: 300;
+    margin: 1rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+}
+
+/* header */
+
+header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.25rem 4.25rem 0;
+    animation: 1s animate 0.5s forwards;
+    opacity: 0.8;
+    z-index: 10;   
+}
+
+header h2{
+    display: flex;
+    margin-right: -1rem;
+    opacity: 0.8;
+}
+
+header h2:hover{
+    opacity: 1;
+    font-weight: bold;
+}
+
+header nav li{
+    margin: 0 15px;
+}
+
+
+/* banner */
+.banner-area{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    color: #A7C3CD;
+    margin-bottom: 1rem;
+}
+
+.banner-area .img-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -5;
+    background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner-area h1{
+    margin-bottom: 1rem;
+    font-size: 3.75rem;
+  
+}
+
+.banner-area h3{
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    opacity: 0.8;
+}
+
+.banner-text{
+    margin-top: 100px;
+    opacity: 0;
+    animation: 1s anime-two .5s forwards;
+}
+
+@keyframes anime-two{
+    100%{
+        opacity: 1;
+        margin: 0;
+    }
+}
+
+
+/* products */
+
+.products{
+    margin-top: 2rem;
+    background-color: #211712;
+}
+.product-container {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width:100%;
+    height: auto;
+    background-color: #211712;
+} 
+.prod {
+    align-items: center;
+    margin: 1rem;
+    width: 40%;
+    max-width: 28rem;
+    text-align: center;
+    padding-bottom:1.5rem;
+    background-color: #0d0a07;
+    border-radius: 1.5%;
+   
+}
+.prod img {
+    height: 20rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    border-top-left-radius: 1.5%;
+    border-top-right-radius: 1.5%;
+    
+    
+}
+.productstext{
+    width: 100%;
+    
+}
+
+/*team */
+.team-area{
+    background-color:#0d0a07;
+    
+}
+
+.employee-container{
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content:center;
+    width:100%;
+    height: auto;
+}
+.employee{
+    align-items: center;
+    margin: 1.5rem;
+    min-width: auto;
+    max-width: 25rem;
+    min-height: 30rem;
+
+    text-align: center;
+    padding: 2rem 3rem;
+    background-color: #211712;
+    border-radius: 3%;
+}
+
+.emp-img{
+    max-height: 10rem;
+    max-width: 10rem;
+    border-radius: 50%;
+}
+
+/*mission */
+
+.banner-area-mission{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 50vh;
+    color: #A7C3CD;
+    }
+
+.banner-area-mission .img-area-mission{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -5;
+    background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../background-mission.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner-area-mission h3{
+    margin-bottom: 2rem;
+    font-size: 3.25rem;
+    font-family: "Roboto Slab", SansSerif;
+}
+
+.banner-area-mission h4{
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-transform: none;
+    font-family: "Roboto Mono", SansSerif;
+}
+
+/*footer*/
+#footer-img{
+    height: 4rem;
+    width: 4rem;
+    opacity: .75;
+
+    
+}
+footer{
+    background-color: #0d0a07;
+    padding: 1.5rem;
+}
+.footer-stuff{ 
+    display: inline;
+    text-align: center;
+    align-content: center;
+    justify-content:center;
+    height: auto;   
+}
+
+/*media */
+@media (max-width: 821px){
+    section{
+        padding:3rem 1.25rem;
+    }
+}
+
+@media (max-width:821px){
+header{
+    padding: 1rem 1rem;
+    flex-direction: column;
+    }
+}
+
+@media (max-width: 821px){
+    .banner-area{
+        min-height: 600px
+
+    }
+
+    .banner-area h1{
+        font-size: 1.75rem
+    }
+    
+    .banner-area h3{
+        font-size: 1.25rem
+    }
+}
+ @media (max-width:821px){
+    .prod img {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 821px) {
+    .employee {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .employee-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
